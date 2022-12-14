@@ -99,7 +99,8 @@
 
 				<p class="mt-4 text-sm text-gray-500 dark:text-gray-400">
 					Aún no tiene una cuenta?
-					<a href="/" class="text-gray-700 underline dark:text-gray-200">Registrese</a>.
+					<a href="/auth/register" class="text-gray-700 underline dark:text-gray-200">Registrese</a
+					>.
 				</p>
 
 				<p class="mt-4 text-sm text-gray-500 dark:text-gray-400">
