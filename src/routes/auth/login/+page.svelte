@@ -62,23 +62,23 @@
 					</p>
 				</div>
 
-				<form action="#" class="mt-8 grid grid-cols-6 gap-6">
-					<div class="col-span-6">
-						<label for="Email" class="block text-sm font-medium text-gray-700 dark:text-gray-200">
+				<form method="POST" action="?/login" class="mt-8 grid grid-cols-6 gap-6">
+					<div class="col-span-6 form-control">
+						<label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-200">
 							Email
 						</label>
 
 						<input
 							type="email"
-							id="Email"
+							id="email"
 							name="email"
 							class="input input-bordered input-primary w-full input-sm mt-1"
 						/>
 					</div>
 
-					<div class="col-span-6">
+					<div class="col-span-6 form-control">
 						<label
-							for="Password"
+							for="password"
 							class="block text-sm font-medium text-gray-700 dark:text-gray-200"
 						>
 							Contraseña
@@ -86,7 +86,7 @@
 
 						<input
 							type="password"
-							id="Password"
+							id="password"
 							name="password"
 							class="input input-bordered input-primary w-full input-sm mt-1"
 						/>
