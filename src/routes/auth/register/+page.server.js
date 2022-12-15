@@ -7,23 +7,22 @@ export const load = ({ locals }) => {
 	}
 };
 
+// Path: src/routes/auth/register/+page.server.js
 export const actions = {
+	//metodo asincrono para registrar usuario
 	register: async ({ locals, request }) => {
+		//obtenemos los datos del formulario
 		const formData = await request.formData();
+		//creamos un objeto con los datos del formulario y lo serializamos
 		const data = serializeNonPOJOs(Object.fromEntries([...formData]));
 		console.log(data);
 
 		try {
-			// const newUser = await locals.pb.users.create(data);
+			//creamos un nuevo usuario
+
 			// eslint-disable-next-line no-unused-vars
 			const record = await locals.pb.collection('users').create(data);
-
-			// const { token, user } = await locals.pb.users.authViaEmail(data.email, data.password);
-			//
-			// const updatedProfile = await locals.pb.records.update('profiles', user.profile.id, {
-			//   name: data.name
-			// });
-
+			//limpiamos el authStore para que no se quede con el usuario que acabamos de crear
 			locals.pb.authStore.clear();
 		} catch (err) {
 			console.log('Error:', err);
@@ -32,7 +31,7 @@ export const actions = {
 				message: err
 			};
 		}
-
+		//redireccionamos a la ruta de login
 		throw redirect(303, '/auth/login');
 	}
 };

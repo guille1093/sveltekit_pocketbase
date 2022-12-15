@@ -77,15 +77,14 @@
 				</div>
 
 				<div class="col-span-6 w-full">
-					<h1 class="text-2xl font-bold text-accent-content/90 w-full justify-items-center ">Registrese para poder disfrutar de todos nuestros servicios. 🚀</h1>
+					<h1 class="text-2xl font-bold text-accent-content/90 w-full justify-items-center ">
+						Registrese para poder disfrutar de todos nuestros servicios. 🚀
+					</h1>
 				</div>
 
 				<form method="POST" action="?/register" class="mt-8 grid grid-cols-6 gap-6">
 					<div class="col-span-6 sm:col-span-3 form-control">
-						<label
-							for="name"
-							class="block text-sm font-medium text-gray-700 dark:text-gray-200"
-						>
+						<label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-200">
 							Nombre
 						</label>
 
@@ -170,7 +169,9 @@
 					<div class="col-span-6">
 						<p class="mt-0 text-sm text-gray-500 dark:text-gray-400">
 							Ya tiene una cuenta?
-							<a href="/auth/login" class="text-gray-700 underline dark:text-gray-200">Inicie sesión</a>.
+							<a href="/auth/login" class="text-gray-700 underline dark:text-gray-200"
+								>Inicie sesión</a
+							>.
 						</p>
 					</div>
 
@@ -181,11 +182,8 @@
 						</p>
 					</div>
 
-
 					<div class="col-span-6 sm:flex sm:items-center sm:gap-4">
-						<button class="btn btn-primary w-full">
-							Registrarme
-						</button>
+						<button class="btn btn-primary w-full"> Registrarme </button>
 					</div>
 				</form>
 			</div>

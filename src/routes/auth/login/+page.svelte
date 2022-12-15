@@ -72,7 +72,7 @@
 							type="email"
 							id="Email"
 							name="email"
-							class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm dark:border-gray-700 dark:bg-gray-800 dark:text-gray-200"
+							class="input input-bordered input-primary w-full input-sm mt-1"
 						/>
 					</div>
 
@@ -88,7 +88,7 @@
 							type="password"
 							id="Password"
 							name="password"
-							class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm dark:border-gray-700 dark:bg-gray-800 dark:text-gray-200"
+							class="input input-bordered input-primary w-full input-sm mt-1"
 						/>
 					</div>
 
