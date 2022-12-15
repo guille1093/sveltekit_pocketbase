@@ -24,7 +24,7 @@ export const actions = {
       console.log('Sesion iniciada con exito');
       console.log('Valid: ',locals.pb.authStore.isValid);
       console.log('Token: ',locals.pb.authStore.token);
-      console.log('Model: ',locals.pb.authStore.model.id);
+      console.log('ID: ',locals.pb.authStore.model.id);
     } catch (err) {
       console.log('Error:', err);
       return {
@@ -33,6 +33,6 @@ export const actions = {
       };
     }
     //redireccionamos a la ruta de inicio si no hay errores
-    throw redirect(303, '/');
+    throw redirect(303, '/index/main');
   }
 }
