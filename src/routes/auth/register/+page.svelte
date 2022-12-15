@@ -1,12 +1,3 @@
-<!--
-  This component uses @tailwindcss/forms
-
-  yarn add @tailwindcss/forms
-  npm install @tailwindcss/forms
-
-  plugins: [require('@tailwindcss/forms')]
--->
-
 <section class="bg-white dark:bg-gray-900">
 	<div class="lg:grid lg:min-h-screen lg:grid-cols-12">
 		<section class="relative flex h-32 items-end bg-gray-900 lg:col-span-5 lg:h-full xl:col-span-6">
