@@ -3,7 +3,7 @@ import { serializeNonPOJOs } from "$lib/helpers.js";
 
 export const load = ({ locals }) => {
   if (locals.pb.authStore.isValid) {
-    throw redirect(303, '/');
+    throw redirect(303, '/index/main');
   }
 };
 
